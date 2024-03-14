@@ -39,22 +39,18 @@
 }
 #homeTab {
     color: white;
-    padding-left: 60px;
     display: flex;
 }
 #aboutTab {
     color: white;
-    padding-left: 60px;
     display: flex;
 }
 #prodTab {
     color: white;
-    padding-left: 60px;
     display: flex;
 }
 #locTab {
     color: white;
-    padding-left: 60px;
     display: flex;
 }
 #botNavBar-container {
@@ -108,8 +104,26 @@ span {
     margin: 5 20px;
 }
 
-.nav-tab:hover {
+.nav-tab {
     cursor: pointer;
+    transition: background-color 0.3s, font-size 0.3s;
 }
 
+.tabsName {
+    font-weight: bolder;
+    font-size: 24px;
+    padding-left: 10px;
+    transition: background-color 0.3s, font-size 0.3s;
+}
 
+.tabsName:hover {
+   font-size: 1.6em; /* Change to desired font size */
+}
+
+.nav-tab:hover .tabsName {
+    font-size: 1.6em; /* Change to desired font size */
+}
+
+#tabs-container:hover  {
+    background-color: rgba(9, 255, 103, 0.1); /* Change to desired darker shade */
+}
