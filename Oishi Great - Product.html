@@ -5,6 +5,16 @@
     <title> Oishi Great - Product </title>
     <link rel="stylesheet" href="css\mainCss.css">
 
+    <script>
+        function showPrice(x) {
+            var popup = document.getElementById(x.id).querySelector(".popup");
+            popup.style.visibility = "visible";
+        }
+        function hidePrice(x) {
+            var popup = document.getElementById(x.id).querySelector(".popup");
+            popup.style.visibility = "hidden";
+        }
+    </script>
 </head>
 
 <body>
@@ -35,21 +45,25 @@
 
     <div id="product-products">
         <div id="products">
-            <div id="5gal">
-                <img id="5gal-img" src="images\5gal.png">
+            <div id="5gal" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
+                <img class="product" id="5gal-img" src="images\5gal.png">
                 <p>5 Gallons</p>
+                <div class="popup"><p>5 Gallon<br>30 Pesos</p></div>
             </div>
-            <div id="1000ml">
-                <img id="1000ml-img" src="images\1000ml.png">
+            <div id="1000ml" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
+                <img class="product" id="1000ml-img" src="images\1000ml.png">
                 <p>1000 ml</p>
+                <div class="popup"><p>1000 ml Large<br>18 Pesos</p></div>
             </div>    
-            <div id="500ml">
-               <img id="500ml-img" src="images\500ml.png">
+            <div id="500ml" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
+               <img class="product" id="500ml-img" src="images\500ml.png">
                 <p>500 ml</p> 
+                <div class="popup"><p>500 ml Medium<br>12 Pesos</p></div>
             </div> 
-            <div id="350ml">
-                <img id="350ml-img" src="images\350ml.png">
+            <div id="350ml" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
+                <img class="product" id="350ml-img" src="images\350ml.png">
                 <p>350 ml</p>
+                <div class="popup"><p>350 ml Small<br>9 Pesos</p></div>
             </div>
         </div>
     </div>
