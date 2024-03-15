@@ -46,8 +46,9 @@
     padding-left: 10px;
     cursor: pointer;
 }
-.nav-tab{
+.nav-tab {
     margin-right: 20px;
+    transition: transform 0.3s ease; /* Add transition for smoother animation */
 }
 #homeTab {
     color: white;
@@ -152,6 +153,7 @@
 
 .nav-tab:hover {
     cursor: pointer;
+    transform: scale(1.05); /* Scale up the tab on hover */
 }
 
 .content-container {
@@ -175,10 +177,7 @@
     flex-direction: column;
 }
 
-h2{
-    color: #333;
-    margin-bottom: 35px;
-}
+
 
 iframe{
     width: 80%;
@@ -188,19 +187,24 @@ iframe{
 
 
 
-
-#upperBox{
-    border-bottom:#333 1px solid;
-    height:40vh;
-
+#upperBox {
+    border-bottom: #333 1px solid;
+    height: 70vh;
+    background-image: url(../images/mainbackground.jpg);
+    background-size: cover; /* Scale the background image to cover the entire container */
+    background-position: center; /* Center the background image */
 }
 
+
 .home-intro{
-    margin: 50px;
-    padding-top: 50px;
+    padding-top: 90px;
+    padding-left:50px;
     max-width: 950px;
 }
 
+.home-intro h1, .home-intro p, .learn-button{
+    margin:0 50px;
+}
 .home-intro h1{
     font-size: 50px;
     font-weight: bolder;
@@ -235,9 +239,12 @@ iframe{
 #secondBox{
     background:#CAF0F8 ;
     border-bottom:#333 1px solid;
-    height:45vh;
+    height:50vh;
     display:flex;
     flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
 }
 
 .second-intro{
