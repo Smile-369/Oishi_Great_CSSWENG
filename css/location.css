@@ -63,7 +63,6 @@
     background-color: rgb(22, 72, 99);    
     font-family: 'Krona One', sans-serif;
     display: flex;
-    position: fixed;
     bottom: 0;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     align-items: absolute;
