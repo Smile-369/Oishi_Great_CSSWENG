@@ -1,4 +1,3 @@
-
 /* include imports and @ stuff */
 :root {
     --darkBlue: rgb(22, 72, 99);
@@ -68,155 +67,6 @@
     background-color: var(--darkBlue);    
     font-family: 'Krona One', sans-serif;
     display: flex;
-    position: fixed;
-    bottom: 0;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    align-items: absolute;
-    z-index: 10;
-}
-#logo-bot{
-    padding-left: 600px;
-}
-#find{
-    color: white;
-    width:15em;
-    text-align:center;
-    padding-top: 8px;
-}
-#addr{
-    padding-top: 10px;
-}
-#contact{
-    color: white;
-    width:10em;
-    text-align:center;
-    padding-top: 8px;
-}
-#num{
-    padding-top: 10px;
-}
-#socials{
-    color: white;
-    width:10em;
-    text-align:center;
-    padding-top: 8px;
-}
-#soc{
-    padding-top: 10px;
-}
-
-span {
-    height: 110px;
-    width: 3px;
-    background-color: white;
-    border-radius: 99px;
-    margin: 5 20px;
-}
-
-.nav-tab:hover {
-    cursor: pointer;
-}
-
-.content-container {
-    width: auto;
-    padding: 5%;
-}
-
-/* location page */
-#locTab {
-    color: white;
-    padding-left: 60px;
-    display: flex;
-}
-
-.loc-container{
-    width: 100%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-h2{
-    color: #333;
-    margin-bottom: 35px;
-}
-
-iframe{
-    width: 80%;
-    height: 400px;
-}
-/* include imports and @ stuff */
-:root {
-    --darkBlue: rgb(22, 72, 99);
-
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* common */
-#topNavBar-container {
-    height: 105px;
-    width: 100%;
-    background-color: var(--darkBlue);    
-    font-family: 'Krona One', sans-serif;
-    display: flex;
-    position: sticky;
-    top: 0;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    z-index: 10;
-}
-#logo-top{
-    padding: 20px;
-}
-#logo{
-    width: 100px;
-    height: 100px;
-}
-#tabs-container {
-    height: 25%;
-    padding-left: 900px;
-    display: flex;
-}
-.tabsName {
-    font-weight: bolder;
-    font-size: 24px;
-    padding-left: 10px;
-}
-#homeTab {
-    color: white;
-    padding-left: 60px;
-    display: flex;
-}
-#aboutTab {
-    color: white;
-    padding-left: 60px;
-    display: flex;
-}
-#prodTab {
-    color: white;
-    padding-left: 60px;
-    display: flex;
-}
-#locTab {
-    color: white;
-    padding-left: 60px;
-    display: flex;
-}
-#botNavBar-container {
-    height: 110px;
-    width: 100%;
-    background-color: var(--darkBlue);    
-    font-family: 'Krona One', sans-serif;
-    display: flex;
-    position: fixed;
     bottom: 0;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     align-items: absolute;
@@ -309,9 +159,21 @@ iframe{
 .home-intro{
     margin: 50px;
     padding-top: 50px;
-    max-width: 650px;
+    max-width: 850px;
 }
 
+.home-intro h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.home-intro p{
+    font-size: 20px;
+    color: #333;
+    padding-top: 10px;
+
+}
 .learn-button {
     display: block;
     margin-top: 20px; /* Adjust spacing between text and button */
@@ -351,16 +213,26 @@ iframe{
     justify-content: center;
 }
 
-.secondBoxImages {
+.image-container p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
+
+}
+
+.secondBoxImages {
+    display: flex;
+    justify-content: space-around; /* Adjust the spacing between images */
     align-items: center;
-    padding-top: 30px; /* Add margin-top to separate images from the text */
+    padding-top: 40px; /* Add margin-top to separate images from the text */
 }
 
 .secondBoxImages img{
     width: 125px;
     height: 125px;
+    margin: 0 80px; /* Adjust the margin as needed */
 }
 
 #thirdBox{
