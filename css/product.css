@@ -103,3 +103,33 @@
 .nav-tab:hover {
     cursor: pointer;
 }
+
+/* Product page */
+#products {
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 100px;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 200px;
+    height: 250px;
+}
+
+.popup {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    background-color: grey;
+    text-align: center;
+    visibility: hidden;
+}
