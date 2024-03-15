@@ -36,6 +36,10 @@
     font-weight: bolder;
     font-size: 24px;
     padding-left: 10px;
+    cursor: pointer;
+}
+.nav-tab{
+    margin-right: 20px;
 }
 #homeTab {
     color: white;
@@ -128,4 +132,26 @@ iframe{
 
 .nav-tab:hover {
     cursor: pointer;
+}
+
+.tabsName {
+    position: relative; /* Ensure the underline is relative to the text */
+    text-decoration: none; /* Remove default underline */
+    transition: font-size 0.3s ease; /* Add transition for font size */
+}
+
+
+.tabsName::after {
+    content: ''; /* Add a pseudo-element for the underline */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the position of the underline */
+    width: 0;
+    height: 2px;
+    background-color: #fff; /* Color of the underline */
+    transition: width 0.3s ease; /* Add animation to the underline */
+}
+
+.tabsName:hover::after {
+    width: 100%; /* Expand the width of the underline on hover */
 }

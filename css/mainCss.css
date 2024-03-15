@@ -41,7 +41,7 @@
     display: flex;
 }
 .tabsName {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 24px;
     padding-left: 10px;
     cursor: pointer;

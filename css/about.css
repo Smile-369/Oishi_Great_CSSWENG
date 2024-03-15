@@ -92,37 +92,56 @@
 #history-content{
     margin: auto;
     display: block;
-    width: 500px;
+    max-width: 700px;
     text-align: center;
 }
 #hsitoText{
     padding-bottom: 2vh;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-weight:700;
+    font-size:55px;
+}
+#history-content p{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size:20px;
+    max-width:900px;
 }
 .line{
     border-bottom: 500px solid #888;
 }
-#services-container{
-    padding-top: 15vh;
+#services-container {
+    position: relative; /* Ensure the container is positioned relatively */
+    padding-top: 6vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(221, 242, 253);
+    background-image:url(../images/output-onlinepngtools\ \(1\).png)
 }
 #services-content{
     margin: auto;
     display: block;
     text-align: center; 
-    width: 700px;
+    width: 900px;
     padding-bottom: 5vh;
 }
-#servText{
-    text-decoration: underline;
-    padding-bottom: 2vh;
+
+#services-content h1{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-weight:700;
+    font-size:55px;
 }
-#services-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#services-content p{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size: 20px;
+}
+#servText{
+    padding-bottom: 2vh;
 }
 #p1{
     height: 80vh;
@@ -141,12 +160,22 @@
     background-color: rgb(22, 72, 99);    
     font-family: 'Krona One', sans-serif;
     display: flex;
-    position: fixed;
-    bottom: 0;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     align-items: absolute;
     z-index: 10;
 }
+
+
+#botNavBar-container span {
+    display: inline-block;
+    width: 7px; 
+    height: 100px;
+    background-color: white;
+    margin: 5px 10px 0; 
+    border-radius: 50px;
+}
+
+
 #logo-bot{
     padding-left: 600px;
 }
@@ -181,12 +210,4 @@
 }
 #soc{
     padding-top: 10px;
-}
-#botNavBar-container span {
-    display: inline-block;
-    width: 7px; 
-    height: 100px;
-    background-color: white;
-    margin: 5px 10px 0; 
-    border-radius: 50px;
 }
