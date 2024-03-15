@@ -185,12 +185,11 @@ iframe{
     border-bottom:#333 1px solid;
     height:40vh;
     display:flex;
-    justify-content: center;
     flex-direction:column;
 }
 
 .second-intro{
-    padding-top: 50px;
+    padding-top:25px;
     display:flex;
     justify-content: center;
     font-size:50px;
@@ -199,20 +198,20 @@ iframe{
 .second-body{
     padding-top:10px;
     font-size:25px;
+    display:flex;
+    justify-content: center;
 }
 
 .secondBoxImages {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Add margin-top to separate images from the text */
+    padding-top: 30px; /* Add margin-top to separate images from the text */
 }
 
 .secondBoxImages img{
     width: 125px;
     height: 125px;
-    margin: 0 20px;
-
 }
 
 #thirdBox{
