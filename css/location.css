@@ -178,7 +178,8 @@ iframe{
 }
 
 #order-div {
-    margin: 30px 50px
+    margin: 30px 50px;
+    text-align:center;
 }
 
 #order-div h1 {
@@ -192,6 +193,7 @@ iframe{
 #order-div form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
