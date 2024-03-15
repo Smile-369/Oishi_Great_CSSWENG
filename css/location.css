@@ -75,6 +75,11 @@
 #logo-bot{
     padding-left: 600px;
 }
+#info{
+    display: flex;
+    flex-grow: 1;  
+    color: white;
+}
 #find{
     color: white;
     width:15em;
@@ -102,6 +107,14 @@
 #soc{
     padding-top: 10px;
 }
+#botNavBar-container span {
+    display: inline-block;
+    width: 7px; 
+    height: 100px;
+    background-color: white;
+    margin: 5px 10px 0; 
+    border-radius: 50px;
+}
 
 #locTab {
     color: white;
@@ -110,15 +123,23 @@
 }
 .loc-container{
     width: 100%;
-    height: 75vh;
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-bottom: 1px solid #ccc;
+}
+
+.loc-container h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: bolder;
+    font-weight: bolder;
+    font-size:40px;
 }
 h2{
     color: #333;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 iframe{
     width: 80%;
@@ -154,4 +175,52 @@ iframe{
 
 .tabsName:hover::after {
     width: 100%; /* Expand the width of the underline on hover */
+}
+
+#order-div {
+    margin: 30px 50px
+}
+
+#order-div h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size:40px;
+}
+
+#order-div form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#order-div label {
+    font-weight: bold;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size:20px;
+}
+
+#order-div input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+#order-div button {
+    padding: 10px 20px;
+    background-color: rgb(22, 72, 99);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width:300px;
+}
+
+#order-div button:hover {
+    background-color: #14516d;
 }
