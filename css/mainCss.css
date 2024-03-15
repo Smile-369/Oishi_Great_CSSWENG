@@ -67,7 +67,6 @@
     background-color: var(--darkBlue);    
     font-family: 'Krona One', sans-serif;
     display: flex;
-    position: fixed;
     bottom: 0;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     align-items: absolute;
@@ -202,16 +201,26 @@ iframe{
     justify-content: center;
 }
 
-.secondBoxImages {
+.image-container p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
+
+}
+
+.secondBoxImages {
+    display: flex;
+    justify-content: space-around; /* Adjust the spacing between images */
     align-items: center;
-    padding-top: 30px; /* Add margin-top to separate images from the text */
+    padding-top: 40px; /* Add margin-top to separate images from the text */
 }
 
 .secondBoxImages img{
     width: 125px;
     height: 125px;
+    margin: 0 80px; /* Adjust the margin as needed */
 }
 
 #thirdBox{
