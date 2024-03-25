@@ -177,24 +177,18 @@
     flex-direction: column;
 }
 
-
-
 iframe{
     width: 80%;
     height: 400px;
 }
 
 
-
-
 #upperBox {
     border-bottom: #333 1px solid;
     height: 70vh;
-    background-image: url(../images/mainbackground.jpg);
-    background-size: cover; /* Scale the background image to cover the entire container */
-    background-position: center; /* Center the background image */
-}
 
+    display: flex;
+}
 
 .home-intro{
     padding-top: 90px;
@@ -219,6 +213,7 @@ iframe{
     font-family: "IBM Plex Mono", monospace;
 
 }
+
 .learn-button {
     display: block;
     margin-top: 20px; /* Adjust spacing between text and button */
@@ -234,6 +229,9 @@ iframe{
 
 .learn-button:hover {
     background-color: rgb(22, 72, 99); /* Example hover background color */
+}
+
+#home-intro-image {
 }
 
 #secondBox{
@@ -295,4 +293,44 @@ iframe{
 #thirdBox{
     border-bottom:#333 1px solid;
     height:40vh;
+
+    display: flex;
+    justify-content: space-around;
 }
+
+#delivery-info h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #333;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#delivery-info p{
+    font-size: 25px;
+    color: #333;
+    padding-top: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    align-items: center;
+}
+
+#location-div {
+    display: flex;
+    justify-content: center;
+}
+
+.location-button {
+    display: block;
+    margin-top: 20px; /* Adjust spacing between text and button */
+    padding: 10px 20px;
+    background-color: rgb(32, 105, 145) ; /* Example background color */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.location-button:hover {
+    background-color: rgb(22, 72, 99); /* Example hover background color */
