@@ -213,22 +213,22 @@ iframe{
     border-radius: 7px;
 }
 
-#order-div button {
-    padding: 10px 20px;
-    background-color: rgb(22, 72, 99);
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    width:300px;
+#order-div textarea{
+    width: 750px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
 }
 
 #submit{
-    height:50px;
-    border-radius: 20px;
+    border: none;
+    background-color: rgb(22, 72, 99);
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
-#order-div button:hover {
+#submit:hover {
     background-color: #14516d;
 }
