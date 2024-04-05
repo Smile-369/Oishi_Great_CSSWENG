@@ -234,3 +234,15 @@ iframe{
     cursor:pointer;
     
 }
+
+
+.fa-brands {
+    transition: color 0.3s ease;
+    padding-top: 20px;
+    padding-right:4px;
+    font-size:60px;
+}
+
+.fa-brands:hover {
+    color:#1877F2 !important;
+}

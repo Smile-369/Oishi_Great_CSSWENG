@@ -172,3 +172,11 @@ span {
     border-bottom:#333 1px solid;
     height:40vh;
 }
+
+.fa-brands {
+    transition: color 1s ease;
+}
+
+.fa-brands:hover {
+    color: blue !important;
+}
