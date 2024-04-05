@@ -292,8 +292,7 @@ iframe{
 
 #thirdBox{
     border-bottom:#333 1px solid;
-    height:40vh;
-
+    padding:40px;
     display: flex;
     justify-content: space-around;
 }
@@ -301,14 +300,11 @@ iframe{
 #delivery-info h1{
     font-size: 50px;
     font-weight: bolder;
-    color: #333;
     font-family: "IBM Plex Mono", monospace;
 }
 
 #delivery-info p{
     font-size: 25px;
-    color: #333;
-    padding-top: 10px;
     font-family: "IBM Plex Mono", monospace;
     text-align: center;
     align-items: center;
@@ -317,20 +313,23 @@ iframe{
 #location-div {
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .location-button {
     display: block;
+    padding:5px;
     margin-top: 20px; /* Adjust spacing between text and button */
     padding: 10px 20px;
     background-color: rgb(32, 105, 145) ; /* Example background color */
-    color: white;
     border: none;
     border-radius: 15px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: white;
 }
 
 .location-button:hover {
     background-color: rgb(22, 72, 99); /* Example hover background color */
+}
