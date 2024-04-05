@@ -5,18 +5,8 @@
     <title> Oishi Great - Product </title>
     <link rel="stylesheet" href="css\product.css">
     <script src="https://kit.fontawesome.com/e0c28b56a4.js" crossorigin="anonymous"></script>
-
-    <script>
-        function showPrice(x) {
-            var popup = document.getElementById(x.id).querySelector(".popup");
-            popup.classList.add("show"); // Add the "show" class
-        }
-
-        function hidePrice(x) {
-            var popup = document.getElementById(x.id).querySelector(".popup");
-            popup.classList.remove("show"); // Remove the "show" class
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="css\lightbox.min.css">
+    <script src="script\lightbox-plus-jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -48,24 +38,20 @@
     <div id="product-products">
         <div id="products">
             <div id="5gal" class="productclass" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
-                <img class="product" id="5gal-img" src="images\5gal.png">
+                <a href="images\5gal price.png" data-lightbox="mygallery"><img class="product" id="5gal-img" src="images\5gal.png"></a>
                 <p>5 Gallons</p>
-                <div class="popup"><p>5 Gallons<br>30 Pesos</p></div>
             </div>
             <div id="1000ml" class="productclass" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
-                <img class="product" id="1000ml-img" src="images\1000ml.png">
+                <a href="images\1000ml price.png" data-lightbox="mygallery"><img class="product" id="1000ml-img" src="images\1000ml.png"></a>
                 <p>1000 ml</p>
-                <div class="popup"><p>1000 ml Large<br>18 Pesos</p></div>
             </div>    
             <div id="500ml" class="productclass" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
-               <img class="product" id="500ml-img" src="images\500ml.png">
+                <a href="images\500ml price.png" data-lightbox="mygallery"><img class="product" id="500ml-img" src="images\500ml.png"></a>
                 <p>500 ml</p> 
-                <div class="popup"><p>500 ml Medium<br>12 Pesos</p></div>
             </div> 
             <div id="350ml" class="productclass" onmouseover="showPrice(this)" onmouseout="hidePrice(this)">
-                <img class="product" id="350ml-img" src="images\350ml.png">
+                <a href="images\350ml price.png" data-lightbox="mygallery"><img class="product" id="350ml-img" src="images\350ml.png"></a>
                 <p>350 ml</p>
-                <div class="popup"><p>350 ml Small<br>9 Pesos</p></div>
             </div>
         </div>
     </div>
