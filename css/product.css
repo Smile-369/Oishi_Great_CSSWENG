@@ -209,11 +209,12 @@
 }
 
 
+
 .fa-brands {
     transition: color 0.3s ease;
     padding-top: 20px;
     padding-right:4px;
-    font-size:60px;
+    font-size:50px;
 }
 
 .fa-brands:hover {
